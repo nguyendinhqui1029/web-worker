@@ -1,0 +1,23 @@
+<div class="contain">
+  <label>Enter number:</label>
+  <input [(ngModel)]="number"/>
+  <button (click)="runTask()">Run</button>
+</div>
+<div class="dedicated-wrapper">
+  <div class="none-dedicated">
+    <h3>None Dedicated Worker</h3>
+    <div class="content">
+      <ul>
+        <li *ngFor="let item of noneDedicatedWorkerResult"><span>{{item.taskName}} </span> {{item.value}}</li>
+      </ul>
+    </div>
+  </div>
+  <div class="dedicated">
+    <h3>Dedicated Worker</h3>
+    <div class="content">
+      <ul>
+        <li *ngFor="let item of dedicatedWorkerResult"><span>{{item.taskName}} </span> {{item.value}}</li>
+      </ul>
+    </div>
+  </div>
+</div>

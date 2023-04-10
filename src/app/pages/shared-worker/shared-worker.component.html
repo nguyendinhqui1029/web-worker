@@ -1,0 +1,15 @@
+<div class="contain">
+  <label>Task:</label>
+  <input [(ngModel)]="task" />
+  <button (click)="addTodo()">Add</button>
+</div>
+<div class="content">
+  <div style="display: flex; justify-content: space-between; height: 40px; align-items: center;">
+    <h3>Todo list:</h3> <button (click)="navigateToDeletePage()">Navigate To Delete Page</button>
+  </div>
+  <ul>
+    <li *ngFor="let item of todoList">
+      {{ item.value }}
+    </li>
+  </ul>
+</div>

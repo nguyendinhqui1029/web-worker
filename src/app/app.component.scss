@@ -1,0 +1,19 @@
+
+button {
+  margin: 10px;
+}
+
+.menu-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background: gray;
+  align-items: center;
+  gap: 20px;
+  padding: 16px;
+  a {
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+  }
+}
